@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Titillium Web';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: local('TitilliumWeb-Regular'), local('Titillium Web'),
+    url('../fonts/TitilliumWeb-Regular.eot'),
+    url('../fonts/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TitilliumWeb-Regular.woff2') format('woff2'),
+    url('../fonts/TitilliumWeb-Regular.woff') format('woff'),
+    url('../fonts/TitilliumWeb-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Sailec-Bold';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: local('Sailec-Bold'),
+    url('../fonts/Sailec-Bold.eot'),
+    url('../fonts/Sailec-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Sailec-Bold.woff2') format('woff2'),
+    url('../fonts/Sailec-Bold.woff') format('woff'),
+    url('../fonts/Sailec-Bold.ttf') format('truetype');
+}
