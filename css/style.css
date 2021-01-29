@@ -25,6 +25,12 @@ a {
     margin: 0 auto;
 }
 
+.text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #434A54;
+}
+
 .header {
     padding: 28px 0 29px 0;
 }
@@ -33,10 +39,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__navigation {
-    margin-right: 65px;
+    padding: 0 65px 0 75px;
 }
 
 .navigation-menu {
@@ -48,6 +51,7 @@ a {
 }
 
 .menu-link {
+    font-family: "Sailec-Bold", Arial, sans-serif;
     letter-spacing: 0.25px;
     color: rgba(102, 102, 102, 0.85);
     border-bottom: 1px solid transparent;
@@ -62,4 +66,36 @@ a {
 .menu-link:active, .menu-link:focus {
     color: #4a4a4a;
     border-color: #4a4a4a;
+}
+
+
+.promo__container {
+    display: flex;
+
+}
+
+.promo__about-text {
+    max-width: 522px;
+    margin-bottom: 20px;
+    font-family: Sailec-Bold, Arial, sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: 0.25px;
+    color: #4A4A4A;
+}
+
+.promo__text {
+    max-width: 521px;
+}
+
+.promo__col {
+    flex-basis: 50%;
+}
+
+.promo__col:first-child {
+    padding: 134px 8px 151px 70px;
+}
+
+.promo__col:last-child {
+    background: url("../images/promo.png") no-repeat;
 }
