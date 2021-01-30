@@ -154,3 +154,28 @@ a {
     max-width: 458px;
     margin-bottom: 28px;
 }
+
+
+.about-learning__container {
+    display: flex;
+}
+
+.about-learning__col {
+    flex-basis: 50%;
+}
+
+.about-learning__title {
+    margin-bottom: 20px;
+}
+
+.about-learning__text {
+    margin-bottom: 59px;
+}
+
+.about-learning__col:first-child {
+    padding: 183px 30px 207px 70px;
+}
+
+.about-learning__col:last-child {
+    background: url("../images/about-learning.png") no-repeat;
+}
