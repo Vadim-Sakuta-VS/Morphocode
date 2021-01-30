@@ -33,6 +33,11 @@ a {
     color: #4A4A4A;
 }
 
+.title--secondary {
+    font-size: 24px;
+    line-height: 29px;
+}
+
 .text {
     font-size: 18px;
     line-height: 30px;
@@ -55,6 +60,12 @@ a {
 .link:active, .link:focus {
     color: #12449f;
     border-color: #12449f;
+}
+
+.separator-line {
+    width: 30px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -178,4 +189,77 @@ a {
 
 .about-learning__col:last-child {
     background: url("../images/about-learning.png") no-repeat;
+}
+
+
+.from-blog {
+    padding: 50px 0;
+}
+
+.from-blog__container {
+    max-width: 1050px;
+}
+
+.from-blog__title {
+    margin-bottom: 12px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    flex-basis: 330px;
+}
+
+.blog-posts__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.blog-posts__item:nth-child(4) {
+    margin-left: 0;
+}
+
+.blog-post__img {
+    display: block;
+    width: 100%;
+    line-height: 0;
+}
+
+.blog-post__text-content {
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 17px 20px;
+    background-color: #fff;
+    transform: translateY(-50px);
+}
+
+.blog-post__link {
+    font-family: Sailec-Bold, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.25px;
+    color: #4A4A4A;
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.blog-post__link:hover {
+    border-color: #4A4A4A;
+}
+
+.blog-post__link:active, .blog-post__link:focus {
+    color: #303030;
+    border-color: #303030;
+}
+
+.blog-post__short-text {
+    line-height: 26px;
+    color: #434A54;
+}
+
+.blog-post__separator-line {
+    margin: 4px 0 9px 0;
 }
