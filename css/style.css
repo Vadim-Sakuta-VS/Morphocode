@@ -38,6 +38,13 @@ a {
     line-height: 29px;
 }
 
+.title--small {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
 .text {
     font-size: 18px;
     line-height: 30px;
@@ -61,6 +68,22 @@ a {
     color: #12449f;
     border-color: #12449f;
 }
+
+.link--secondary {
+    font-size: 14px;
+    line-height: 24px;
+    color: #637280;
+}
+
+.link--secondary:hover {
+    border-color: #637280;
+}
+
+.link--secondary:active, .link--secondary:focus {
+    color: #3B4651;
+    border-color: #3B4651;
+}
+
 
 .separator-line {
     width: 30px;
@@ -344,4 +367,72 @@ a {
 
 .btn:hover, .btn:focus {
     background: #095bdb;
+}
+
+
+.footer {
+    padding: 50px 0 105px 0;
+}
+
+.footer__container {
+    padding: 0 75px;
+    display: flex;
+}
+
+.footer__col {
+    flex-basis: 240px;
+}
+
+.footer__col:not(:first-child) {
+    margin-left: 30px;
+}
+
+.footer__title {
+    margin-bottom: 19px;
+}
+
+.footer__list-links-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer__separator-line {
+    margin: 25px 0 17px 0;
+}
+
+.socials {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer__social-link:not(:first-child) {
+    margin-left: 9px;
+}
+
+.social-link {
+    text-decoration: none;
+}
+
+.social-link__icon {
+    fill: #1976D2;
+    transition: .2s;
+}
+
+.social-link:hover .social-link__icon,
+.social-link:focus .social-link__icon {
+    fill: #095bdb;
+}
+
+.social-link__icon-facebook {
+    width: 10px;
+    height: 19px;
+}
+
+.social-link__icon-twitter {
+    width: 19px;
+    height: 15px;
+}
+
+.social-link__icon-linkedin {
+    width: 19px;
+    height: 19px;
 }
