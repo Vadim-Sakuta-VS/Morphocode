@@ -537,6 +537,10 @@ a {
     .start-learning__container {
         padding-right: 65px;
     }
+
+    .footer__container {
+        padding-right: 65px;
+    }
 }
 
 @media screen and (max-width: 1269px) {
@@ -612,6 +616,29 @@ a {
 
     .blog-posts__item:nth-child(n+2) {
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 788px) {
+    .footer {
+        padding-bottom: 50px;
+    }
+
+    .footer__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__col:nth-child(n+3) {
+        margin-top: 30px;
+    }
+
+    .footer__col:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .footer__col:nth-child(2n+2) {
+        margin-left: 10%;
     }
 }
 
@@ -702,6 +729,12 @@ a {
     }
 }
 
+@media screen and (max-width: 673px) {
+    .footer__col {
+        flex-basis: 160px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .container {
         max-width: 90%;
@@ -713,7 +746,8 @@ a {
     }
 
     .promo__col:first-child, .about-portfolio__col:last-child,
-    .about-learning__col:first-child, .start-learning__container {
+    .about-learning__col:first-child, .start-learning__container,
+    .footer__container {
         padding-left: 0;
         padding-right: 0;
     }
@@ -726,6 +760,18 @@ a {
     .title {
         font-size: 21px;
         line-height: 1;
+    }
+
+    .footer__col {
+        flex-basis: 100%;
+    }
+
+    .footer__col:nth-child(n+2) {
+        margin-top: 30px;
+    }
+
+    .footer__col:nth-child(2n+2) {
+        margin-left: 0;
     }
 }
 
