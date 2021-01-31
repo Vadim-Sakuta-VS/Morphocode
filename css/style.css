@@ -533,6 +533,10 @@ a {
         padding-right: 65px;
         padding-bottom: 10%;
     }
+
+    .start-learning__container {
+        padding-right: 65px;
+    }
 }
 
 @media screen and (max-width: 1269px) {
@@ -551,11 +555,6 @@ a {
     .from-blog__container {
         padding: 0 65px 0 70px;
     }
-
-    /*.title--secondary {*/
-    /*    font-size: 20px;*/
-    /*    line-height: 22px;*/
-    /*}*/
 
     .from-blog__title {
         text-align: center;
@@ -599,6 +598,10 @@ a {
     .about-portfolio__col:last-child {
         padding-top: 10%;
     }
+
+    .start-learning__col:last-child {
+        margin-left: 26px;
+    }
 }
 
 @media screen and (max-width: 824px) {
@@ -630,7 +633,7 @@ a {
     }
 
     .promo__container, .about-portfolio__container,
-    .about-learning__container {
+    .about-learning__container, .start-learning__container {
         flex-direction: column;
     }
 
@@ -684,6 +687,19 @@ a {
     .from-blog__container {
         padding: 0;
     }
+
+    .start-learning {
+        padding: 40px 0;
+    }
+
+    .start-learning__col:first-child {
+        margin-bottom: 50px;
+    }
+
+    .start-learning__col:last-child {
+        flex-basis: auto;
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -697,7 +713,7 @@ a {
     }
 
     .promo__col:first-child, .about-portfolio__col:last-child,
-    .about-learning__col:first-child {
+    .about-learning__col:first-child, .start-learning__container {
         padding-left: 0;
         padding-right: 0;
     }
@@ -710,6 +726,12 @@ a {
     .title {
         font-size: 21px;
         line-height: 1;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .form-subscribe__btn {
+        padding: 0 5px;
     }
 }
 
