@@ -530,14 +530,24 @@ a {
         line-height: 50px;
     }
 
+    .title {
+        font-size: 26px;
+        line-height: 33px;
+    }
+
     .text {
         font-size: 16px;
         line-height: 24px;
     }
+
+    .about-portfolio__col:last-child {
+        padding-right: 65px;
+        padding-bottom: 10%;
+    }
 }
 
 @media screen and (max-width: 1269px) {
-    .promo__col:last-child {
+    .promo__col:last-child, .about-portfolio__col:first-child {
         background-size: contain;
     }
 }
@@ -556,12 +566,24 @@ a {
     }
 }
 
+@media screen and (max-width: 870px) {
+    .about-portfolio__col:last-child {
+        padding-top: 10%;
+    }
+}
+
 @media screen and (max-width: 700px) {
-    .promo {
+    .about-portfolio__col:last-child {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 70px;
+    }
+
+    .promo, .about-portfolio {
         position: relative;
     }
 
-    .promo__container {
+    .promo__container, .about-portfolio__container {
         flex-direction: column;
     }
 
@@ -569,16 +591,23 @@ a {
         padding-right: 65px;
     }
 
-    .promo__col:last-child {
+    .promo__col:last-child, .about-portfolio__col:first-child {
         position: absolute;
         bottom: 0;
-        left: 0;
-        width: 50%;
+        width: 32%;
         height: 70%;
         z-index: -1;
     }
 
-    .promo__about-text {
+    .promo__col:last-child {
+        left: 0;
+    }
+
+    .about-portfolio__col:first-child {
+        right: 0;
+    }
+
+    .promo__about-text, .about-portfolio__title {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -587,6 +616,12 @@ a {
     .promo__text {
         max-width: 450px;
         margin: 0 auto;
+    }
+
+    .about-portfolio__text, .about-portfolio__link-wrap {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -600,7 +635,7 @@ a {
         padding-right: 0;
     }
 
-    .promo__col:first-child {
+    .promo__col:first-child, .about-portfolio__col:last-child {
         padding-left: 0;
         padding-right: 0;
     }
@@ -608,5 +643,10 @@ a {
     .promo__about-text {
         font-size: 26px;
         line-height: 35px;
+    }
+
+    .title {
+        font-size: 21px;
+        line-height: 1;
     }
 }
