@@ -460,6 +460,8 @@ a {
 
     .hamburger-toggle {
         display: block;
+        position: relative;
+        z-index: 1;
     }
 
     .hamburger-toggle__el {
