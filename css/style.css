@@ -20,6 +20,11 @@ a {
     outline: none;
 }
 
+.visually-hidden {
+    opacity: 0;
+    height: 0;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -664,6 +669,10 @@ a {
         flex-direction: column;
     }
 
+    .promo__col, .about-portfolio__col, .about-learning__col {
+        flex-basis: auto;
+    }
+
     .promo__col:first-child, .about-learning__col:first-child {
         padding-right: 65px;
     }
@@ -775,9 +784,15 @@ a {
     }
 }
 
-@media screen and (max-width: 360px) {
-    .form-subscribe__btn {
+@media screen and (max-width: 400px) {
+    .form-subscribe__input, .form-subscribe__btn {
         padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .form-subscribe__input {
+        padding: 0 0 0 5px;
     }
 }
 

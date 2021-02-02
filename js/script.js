@@ -2,10 +2,12 @@ let hamburgerToggle = document.querySelector('.hamburger-toggle');
 let headerNavigation = document.querySelector('.navigation');
 
 hamburgerToggle.addEventListener('click', toggleMenu);
-headerNavigation.addEventListener('click', (e) => {
+headerNavigation.addEventListener('click', headerNavigationHandler);
+
+function headerNavigationHandler(e) {
     let isCanCloseMenu = e.target.classList.contains('navigation');
     isCanCloseMenu && toggleMenu();
-})
+}
 
 function toggleMenu() {
     hamburgerToggle.classList.toggle('hamburger-toggle--active');
